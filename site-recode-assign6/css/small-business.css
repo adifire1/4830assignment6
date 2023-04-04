@@ -8,21 +8,26 @@ body {
 }
 
 
-  select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
-    color: #FFF !important;
-    background-color: #BB3D2F !important;}
+:focus { 
+	/* ensure high-contrast mode still has an indicator */
+	outline: 2px transparent solid;
+
+	/* Apply a thick yellow box-shadow with 
+	   a thin dark blue indicator in the middle */
+	box-shadow: 0 0 0 2px #F9F9D1, 0 0 0 4px red, 0 0 4px 8px #F9F9D1;
+}
 
     h1 {
       color: navy
     }
 
     .btn-primary {
-      background-color: navy;
+      background-color: rgb(73, 11, 85);
     }
 
  
 
     .card-body {
-      background-color: rgb(132, 184, 233);
+      background-color: rgb(170, 245, 173);
     }
     
